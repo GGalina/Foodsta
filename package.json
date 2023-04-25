@@ -5,7 +5,7 @@
   "homepage": "https://ggalina.github.io/Foodsta",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /team-azov/"
+    "build": "parcel build src/*.html --public-url /Foodsta/"
   },
   "repository": {
     "type": "git",
