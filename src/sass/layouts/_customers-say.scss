@@ -2,7 +2,6 @@
   margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 60px;
-  // max-width: 480px;
 
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -16,12 +15,13 @@
     background-size: 100% 100%;
     padding-bottom: 85px;
   }
+
   @include tablet {
-    // max-width: 768px;
     padding-bottom: 120px;
     background-image: url(../images/bg-custom/bg-cust-tab-1x-min.png);
     background-position: bottom;
   }
+
   @include desktop {
     max-width: 1600px;
     padding-top: 100px;
@@ -34,6 +34,7 @@
       padding-right: 123px;
     }
   }
+
   &__title {
     margin-bottom: 20px;
     color: $main__text__color;
@@ -43,6 +44,7 @@
       @include fonts(null, 42px, calc(49 / 42));
     }
   }
+
   &__text {
     margin-bottom: 32px;
     color: $main__text__color;
@@ -52,14 +54,17 @@
       @include fonts(null, 16px, calc(19 / 16));
     }
   }
+
   &-list {
     @include tablet {
       display: flex;
       gap: 32px;
     }
+
     @include desktop {
       gap: 139px;
     }
+
     &__item {
       padding: 8px;
       background-color: $white__color;
@@ -74,15 +79,18 @@
         padding: 14px;
       }
     }
+
     &__item:not(:last-child) {
       margin-bottom: 24px;
       @include tablet {
         margin-bottom: 0px;
       }
     }
+
     &__icon {
       margin-bottom: 28px;
     }
+
     &__text {
       margin-bottom: 40px;
       color: $main__text__color;
@@ -92,6 +100,7 @@
         @include fonts(null, 18px, calc(21 / 18));
       }
     }
+
     .avatar {
       display: flex;
       align-items: center;
@@ -100,6 +109,7 @@
       &__icon {
         margin-right: 16px;
       }
+
       &__content {
         position: relative;
         &::before {
@@ -113,12 +123,14 @@
           border-radius: 1px;
         }
       }
+
       &__title {
         margin-bottom: 2px;
         color: $main__text__color;
         font-style: normal;
         @include fonts(500, 14px, calc(21 / 14));
       }
+      
       &__text {
         color: $main__text__color;
         font-style: normal;

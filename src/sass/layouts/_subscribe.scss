@@ -84,7 +84,7 @@
     &::placeholder {
         font-family: $main__font;
         @include fonts(400, 12px, 1.50);
-        color: #505050;
+        color: $placeholder__color;
     }
 
     &:focus {
@@ -96,7 +96,7 @@
     }
 
     &:not(:placeholder-shown):not(:focus):invalid {
-        border: 0.854167px solid #FF705D;
+        border: 0.854167px solid $invalid__color;
     }
 
     @include tablet {
@@ -118,7 +118,7 @@
 .subscribe__error {
     display: none;
     @include fonts(400, 10px, 1.5);
-    color: #FF705D;
+    color: $invalid__color;
 
     .subscribe__input:not(:placeholder-shown):not(:focus):invalid+& {
         display: block;
@@ -143,11 +143,10 @@
     width: 103px;
     float: right;
 
-
     &:focus,
     &:hover {
-        background: #FFE450;
-        border: 0.854167px solid #FFE450;
+        background: $second__yellow__color;
+        border: 0.854167px solid $second__yellow__color;
     }
 }
 

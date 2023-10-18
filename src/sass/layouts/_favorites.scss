@@ -5,6 +5,7 @@
     padding-top: 100px;
     padding-bottom: 100px;
   }
+
   & img {
       display: block;
       max-width: 100%;
@@ -13,12 +14,12 @@
     }
 }
 
-
 .favorites__titel {
   @include fonts(700, 28px, calc(32 / 28));
   text-align: center;
   margin-bottom: 20px;
-  color: #2c2c2c;
+  color: $main__text__color;
+
   @include tablet {
     font-weight: 700;
     font-size: 42px;
@@ -30,10 +31,12 @@
   @include fonts(null, 14px, calc(16 / 14));
   text-align:  center;
   margin-bottom: 60px;
-  color: #2c2c2c;
+  color: $main__text__color;
+
   @include tablet {
-      @include fonts(null, 16px, calc(19 / 16));
-}
+    @include fonts(null, 16px, calc(19 / 16));
+  }
+
   @include desktop {
     margin-bottom: 40px;
   }
@@ -47,6 +50,7 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+
   @include tablet {
     gap: 32px;
     flex-direction: row;
@@ -56,32 +60,36 @@
   }
 }
 
-
 .favorites__item {
   width: 100%;
   height: auto;
   padding: 17px;
-  border: 11px solid #ffe550;
+  border: 11px solid $yellow__bg__color;
   border-radius: 50%;
   @include animation(border-color);
+
   @include tablet {
     width: calc((100% - 32px) / 2);
-    border: 14px solid #ffe550;
+    border: 14px solid $yellow__bg__color;
     padding: 21px;
   }
+
   @include desktop {
     padding: 24px;
     width: calc((100% - 64px) / 3);
-    border: 16px solid #ffe550;
+    border: 16px solid $yellow__bg__color;
   }
+
   &:nth-last-child(-n + 3) {
     display: none;
+
     @include tablet {
       display: block;
     }
   }
+
   &:hover,
   &:focus{
-    border-color: #BBF330;
+    border-color: $btn__green__color;
   }
 }
