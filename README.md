@@ -1,4 +1,4 @@
-### Foodsta
+# Foodsta
 
 Foodsta is a responsive food delivery landing website built as a group project with a focus on adaptive design and modern front-end practices. It showcases a menu, services, contact section and user-friendly UX for browsing food items online.
 
